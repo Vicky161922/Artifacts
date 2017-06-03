@@ -1,0 +1,23 @@
+SMAP
+new1_jsp.java
+JSP
+*S JSP
+*F
++ 0 new1.jsp
+new1.jsp
++ 1 navigation.jsp
+navigation.jsp
++ 2 slider.html
+slider.html
+*L
+1:50
+1#1,140:51
+1#2,31:190
+2#0:220
+4,7:222
+10:229
+11:230,6
+12:236
+13,4:238
+16:242
+*E

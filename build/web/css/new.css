@@ -1,0 +1,40 @@
+h1{
+    font-size: 30pt;
+    font-family: monospace;
+    color: red;
+    text-shadow: 5px 1px black;
+}
+p.left{
+    font-size: 20px;
+    font-family:  cursive;
+    color: darkred;
+    text-shadow: 5px 2px 4px black;
+    word-spacing: 10px;
+}
+p.sorry{
+    font-size: 20px;
+    font-family:  fantasy;
+    color: turquoise;
+    text-shadow: 5px 2px 4px black;
+    word-spacing: 10px;
+    text-align:  center;
+}
+a:link{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover{
+    border:antiquewhite;
+    font-family: verdana ;
+    text-decoration: none;
+    color:blue;
+}
+a:active{
+    border:antiquewhite;
+    font-family: verdana ;
+    text-decoration: none;
+    color:greenyellow;
+}
+p{
+    color:white;
+}

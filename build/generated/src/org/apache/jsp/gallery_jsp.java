@@ -1,0 +1,300 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class gallery_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/nav.jsp");
+  }
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/new1.css\">\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/new.css\">\n");
+      out.write("        <script type=\"text/javascript\">\n");
+      out.write("<!--\n");
+      out.write("var timeout       = 100;\n");
+      out.write("var closetimer    = 0;\n");
+      out.write("var ddmenuitem    = 0;\n");
+      out.write("\n");
+      out.write("// open hidden layer\n");
+      out.write("function mopen(id)\n");
+      out.write("{\n");
+      out.write("\t// cancel close timer\n");
+      out.write("\tmcancelclosetime();\n");
+      out.write("\n");
+      out.write("\t// close old layer\n");
+      out.write("\tif(ddmenuitem) ddmenuitem.style.visibility = 'hidden';\n");
+      out.write("\n");
+      out.write("\t// get new layer and show it\n");
+      out.write("\tddmenuitem = document.getElementById(id);\n");
+      out.write("\tddmenuitem.style.visibility = 'visible';\n");
+      out.write("\n");
+      out.write("}\n");
+      out.write("// close showed layer\n");
+      out.write("function mclose()\n");
+      out.write("{\n");
+      out.write("\tif(ddmenuitem) ddmenuitem.style.visibility = 'hidden';\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("// go close timer\n");
+      out.write("function mclosetime()\n");
+      out.write("{\n");
+      out.write("\tclosetimer = window.setTimeout(mclose, timeout);\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("// cancel close timer\n");
+      out.write("function mcancelclosetime()\n");
+      out.write("{\n");
+      out.write("\tif(closetimer)\n");
+      out.write("\t{\n");
+      out.write("\t\twindow.clearTimeout(closetimer);\n");
+      out.write("\t\tclosetimer = null;\n");
+      out.write("\t}\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("// close layer when click-out\n");
+      out.write("document.onclick = mclose; \n");
+      out.write("// \n");
+      out.write("</script>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <ul id=\"sddm\">\n");
+      out.write("            <table border=\"0\" align=\"center\">\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"myhome.jsp\" >HOME</a>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m1')\" onmouseout=\"mclosetime()\">COLLECTIONS</a>\n");
+      out.write("                            <div id=\"m1\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"archaeology.jsp\">Archaeology</a>\n");
+      out.write("                                <a href=\"anthropology.jsp\">Anthropology</a>\n");
+      out.write("                                <a href=\"arms.jsp\">Arms & Armors</a>\n");
+      out.write("                                <a href=\"decorative.jsp\">Decorative Art</a>\n");
+      out.write("                                <a href=\"manuscripts.jsp\">Manuscripts</a>\n");
+      out.write("                                <a href=\"epigraphy.jsp\">Epigraphy</a>\n");
+      out.write("                                <a href=\"paintings.jsp\">Paintings</a>\n");
+      out.write("                                <a href=\"western.jsp\">Western Art</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m2')\" onmouseout=\"mclosetime()\">EXPLORE</a>\n");
+      out.write("                            <div id=\"m2\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"ground.jsp\">Ground Floor</a>\n");
+      out.write("                                <a href=\"first.jsp\">First Floor</a>\n");
+      out.write("                                <a href=\"second.jsp\">Second Floor</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m4')\" onmouseout=\"mclosetime()\">PUBLICATIONS</a>\n");
+      out.write("                            <div id=\"m4\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"gallery.jsp\">Gallery</a>\n");
+      out.write("                                <a href=\"#\">Books</a>\n");
+      out.write("                                <a href=\"#\">Bulletins</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m5')\" onmouseout=\"mclosetime()\">EXHIBITIONS</a>\n");
+      out.write("                            <div id=\"m5\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"#\">Past</a>\n");
+      out.write("                                <a href=\"#\">Current</a>\n");
+      out.write("                                <a href=\"#\">Upcoming</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m6')\" onmouseout=\"mclosetime()\">ACTS & RULES</a>\n");
+      out.write("                            <div id=\"m6\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"#\">RIGHT TO INFORMATION</a>\n");
+      out.write("                                <a href=\"cpio.jsp\">CENTRAL PUBLIC INFORMATION OFFICERS(CPIOs)</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m7')\" onmouseout=\"mclosetime()\">ABOUT THE MUSEUM</a>\n");
+      out.write("                            <div id=\"m7\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"history.jsp\">History</a>\n");
+      out.write("                                <a href=\"vision.jsp\">Vision</a>\n");
+      out.write("                                <a href=\"library.jsp\">Library</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                    <td>\n");
+      out.write("                    <li><a href=\"#\" onmouseover=\"mopen('m8')\" onmouseout=\"mclosetime()\">DOWNLOADS</a>\n");
+      out.write("                            <div id=\"m8\" onmouseover=\"mcancelclosetime() \" onmouseout=\"mclosetime() \">\n");
+      out.write("                                <a href=\"login.jsp\">LOGIN</a>\n");
+      out.write("                            </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    </td>\n");
+      out.write("                </tr>\n");
+      out.write("            </table>\n");
+      out.write("        </ul>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        \n");
+      out.write("    </head>\n");
+      out.write("    <body background=\"none\">\n");
+      out.write("        <h1><Gallery</h1>\n");
+      out.write("        <table>\n");
+      out.write("            <tr>\n");
+      out.write("                 <img src=\"image/anthro2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("        <img src=\"image/anthro9.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("        <img src=\"image/anthro3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("        <img src=\"image/anthro6.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("        <img src=\"image/anthro7.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("        <img src=\"image/anthro8.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("         <img src=\"image/anthro1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("          \n");
+      out.write("            <img src=\"image/anthro10.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("              <img src=\"image/anthro11.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("               <img src=\"image/anthro12.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/anthro13.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                 <img src=\"image/anthro14.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("         <img src=\"image/anthro15.jpg\" alt=\"\" border=\"2\" />    \n");
+      out.write("        </tr>\n");
+      out.write("            <tr>\n");
+      out.write("                <img src=\"image/arch13.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch12.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch11.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch10.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch9.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch8.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch7.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch6.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch5.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch4.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arch1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("                <img src=\"image/arms10.png\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms11.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms12.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms1.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms2.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms3.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms4.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms5.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms6.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms7.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms8.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("                <img src=\"image/arms9.jpg\" alt=\"Sword\" border=\"2\" />\n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("    <img src=\"image/decor1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor4.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor5.jpg\" alt=\"\" border=\"2\" width=\"300\" height=\"300\" />\n");
+      out.write("    <img src=\"image/decor6.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor7.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor8.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor9.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/decor10.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/decor11.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("<img src=\"image/epig1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig4.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig5.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig6.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig7.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("<img src=\"image/epig8.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("\n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("    <img src=\"image/manu1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/manu2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/manu3.jpg\" alt=\"\" border=\"2\" />               \n");
+      out.write("    <img src=\"image/manu4.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("     <img src=\"image/painting1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting2.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting11.png\" alt=\"\" border=\"2\" />               \n");
+      out.write("                <img src=\"image/painting8.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting10.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting4.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting5.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting6.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting7.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                <img src=\"image/painting9.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("                \n");
+      out.write("</tr>\n");
+      out.write("<tr>\n");
+      out.write("    <img src=\"image/western.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/western3.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("    <img src=\"image/western1.jpg\" alt=\"\" border=\"2\" />\n");
+      out.write("</tr>\n");
+      out.write("        </table>\n");
+      out.write("       \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
